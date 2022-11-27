@@ -24,7 +24,7 @@ function Hero({}: Props) {
         src="https://aldringordon.com/assets/Aldrin.jpg"
         alt=""
       />
-      <div>
+      <div className="z-20">
         <h2 className="pb-2 text-sm text-gray-400 uppercase tracking-[15px]">
           Software Engineer
         </h2>
