@@ -37,12 +37,12 @@ function ContactMe({}: Props) {
         <div className="space-y-10">
           <div className="flex items-center justify-center space-x-5">
             <PhoneIcon className="text-[#f8ffae] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">+123456789</p>
+            <p className="text-2xl">+12 345 678 910</p>
           </div>
 
           <div className="flex items-center justify-center space-x-5">
             <EnvelopeIcon className="text-[#f8ffae] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">aldringordon@gmail.com</p>
+            <p className="text-2xl">example@gmail.com</p>
           </div>
 
           <div className="flex items-center justify-center space-x-5">
