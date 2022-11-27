@@ -27,7 +27,7 @@ function ExperienceCard({}: Props) {
           once: true,
         }}
         className="w-36 xl:w-[200px] object-cover object-center"
-        src="https://www.bankwest.com.au/content/dam/bankwest/web-assets/images/global/logo/logo-bankwest-desktop-new-global.png"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/170px-Javascript-shield.svg.png"
         alt=""
       />
 
