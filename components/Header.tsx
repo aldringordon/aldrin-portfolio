@@ -58,17 +58,15 @@ function Header({}: Props) {
         }}
         className="flex flex-row items-center text-gray-300 cursor-pointer"
       >
-        <Link href="#contact">
-          <SocialIcon
-            className="cursor-pointer"
-            network="email"
-            fgColor="gray"
-            bgColor="transparent"
-          />
-          <p className="hidden text-sm text-gray-400 uppercase md:inline-flex">
-            Send Me An Email
-          </p>
-        </Link>
+        <SocialIcon
+          className="cursor-pointer"
+          network="email"
+          fgColor="gray"
+          bgColor="transparent"
+        />
+        <p className="hidden text-sm text-gray-400 uppercase md:inline-flex">
+          Send Me An Email
+        </p>
       </motion.div>
     </header>
   );
