@@ -32,6 +32,7 @@ function Projects({}: Props) {
               viewport={{ once: true }}
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
               alt=""
+              className="w-36 xl:w-[200px] object-cover object-center"
             />
 
             <div className="max-w-6xl px-0 space-y-10 md:px-10">
