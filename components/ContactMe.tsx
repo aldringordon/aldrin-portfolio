@@ -82,6 +82,7 @@ function ContactMe({}: Props) {
             placeholder="Message"
             className="contactInput"
           />
+
           <button
             type="submit"
             className="bg-[#f8ffae] py-5 px-10 rounded-md text-black font-bold text-lg"
