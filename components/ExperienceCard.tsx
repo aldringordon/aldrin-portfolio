@@ -1,4 +1,4 @@
-/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 import { motion } from "framer-motion";
 import React from "react";
 
@@ -38,14 +38,17 @@ function ExperienceCard({}: Props) {
           <img
             className="w-10 h-10 rounded-full"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/170px-Javascript-shield.svg.png"
+            alt=""
           />
           <img
             className="w-10 h-10 rounded-full"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/170px-Javascript-shield.svg.png"
+            alt=""
           />
           <img
             className="w-10 h-10 rounded-full"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/170px-Javascript-shield.svg.png"
+            alt=""
           />
         </div>
         <p className="py-5 text-gray-300 uppercase">
