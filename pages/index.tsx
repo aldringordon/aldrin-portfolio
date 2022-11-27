@@ -9,7 +9,6 @@ export default function Home() {
         <title>Aldrins Portfolio</title>
       </Head>
 
-      {/* Header */}
       <Header />
 
       {/* Hero */}
