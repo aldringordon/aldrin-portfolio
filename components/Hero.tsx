@@ -7,11 +7,7 @@ type Props = {};
 
 function Hero({}: Props) {
   const [text, count] = useTypewriter({
-    words: [
-      "G'day! My name is Aldrin Gordon",
-      "Software Developer.java",
-      "<Skateboarding Enthusiast />",
-    ],
+    words: ["Software Engineer.java", "<Skateboarding Enthusiast />"],
     loop: true,
     delaySpeed: 1000,
     typeSpeed: 60,
@@ -27,16 +23,24 @@ function Hero({}: Props) {
         alt=""
       />
       <div className="z-20">
-        <h2 className="pb-2 text-sm text-gray-400 uppercase tracking-[15px] sm:text-base md:text-md lg:text-lg">
+        <h2 className="pb-2 text-sm text-gray-400 uppercase tracking-[10px] sm:text-base md:text-md lg:text-lg">
           Software Engineer
         </h2>
 
         <h1 className="px-10 text-base font-semibold sm:text-2xl md:text-4xl lg:text-6xl">
-          <span className="mr-3">{text}</span>
+          <span>G&apos;day! My name is Aldrin Gordon</span>
+          <br></br>
+          <span className="text-sm sm:text-xl md:text-2xl lg:text-3xl">
+            {text}
+          </span>
           <Cursor cursorColor="#F8FFAE" />
         </h1>
 
-        <div className="pt-5">
+        <div
+          className="pt-5
+        max-w-[400px]
+        sm:max-w-full"
+        >
           <Link href="#about">
             <button className="heroButton">About</button>
           </Link>
@@ -48,9 +52,7 @@ function Hero({}: Props) {
           <Link href="#skills">
             <button className="heroButton">Skills</button>
           </Link>
-        </div>
 
-        <div className="pt-5">
           <Link href="#projects">
             <button className="heroButton">Projects</button>
           </Link>

@@ -29,16 +29,19 @@ function Header({}: Props) {
           url="https://linkedin.com/in/aldringordon"
           fgColor="gray"
           bgColor="transparent"
+          className="hover:scale-125"
         />
         <SocialIcon
           url="https://github.com/aldringordon"
           fgColor="gray"
           bgColor="transparent"
+          className="hover:scale-125"
         />
         <SocialIcon
           url="https://aldringordon.com"
           fgColor="gray"
           bgColor="transparent"
+          className="hover:scale-125"
         />
       </motion.div>
 
@@ -59,7 +62,7 @@ function Header({}: Props) {
         className="flex flex-row items-center text-gray-300 cursor-pointer"
       >
         <SocialIcon
-          className="cursor-pointer"
+          className="cursor-pointer hover:scale-125"
           network="email"
           fgColor="gray"
           bgColor="transparent"
