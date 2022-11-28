@@ -27,11 +27,11 @@ function Hero({}: Props) {
         alt=""
       />
       <div className="z-20">
-        <h2 className="pb-2 text-sm text-gray-400 uppercase tracking-[15px] md:text-base lg:text-lg">
+        <h2 className="pb-2 text-sm text-gray-400 uppercase tracking-[15px] sm:text-base md:text-md lg:text-lg">
           Software Engineer
         </h2>
 
-        <h1 className="px-10 text-xl font-semibold md:text-4xl lg:text-6xl">
+        <h1 className="px-10 text-base font-semibold sm:text-2xl md:text-4xl lg:text-6xl">
           <span className="mr-3">{text}</span>
           <Cursor cursorColor="#F8FFAE" />
         </h1>
