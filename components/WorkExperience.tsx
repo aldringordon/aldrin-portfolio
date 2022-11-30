@@ -14,15 +14,18 @@ function WorkExperience({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="relative flex flex-col items-center h-screen max-w-full mx-auto overflow-hidden text-left md:flex-row justify-evenly"
+      className="relative flex flex-col items-center justify-center h-screen mx-auto overflow-hidden"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-[60px] uppercase tracking-[20px] text-gray-500 text-2xl">
         Experience
       </h3>
 
       <div
-        className="flex w-full p-10 space-x-5 overflow-x-scroll snap-x snap-mandatory
-      scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#f8ffae]/80"
+        className="max-w-[370px] flex 
+        w-2xl
+        translate-y-[10px]
+        p-6 space-x-5 overflow-x-scroll snap-x snap-mandatory
+        scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#f8ffae]/80"
       >
         <ExperienceCard />
         <ExperienceCard />
