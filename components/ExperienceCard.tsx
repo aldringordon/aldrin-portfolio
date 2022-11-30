@@ -12,10 +12,9 @@ function ExperienceCard({}: Props) {
   return (
     <article
       className="flex flex-col items-center flex-shrink-0 rounded-lg
-      snap-center bg-[#292929] p-5 hover:opacity-100 opacity-40
-      cursor-pointer transition-opacity duration-200 overflow-hidden
-      w-[350px] h-[510px]
-      xs:w-[200px]"
+      snap-center bg-[#292929] p-5 hover:opacity-100 opacity-40 visited:opacity-100
+      cursor-pointer transition-opacity duration-200
+      w-[350px] h-[510px]"
     >
       <img
         className="max-w-[150px] max-h-[55px] object-cover object-center"
@@ -72,7 +71,7 @@ function ExperienceCard({}: Props) {
           Jun 2022 - Present
         </p>
 
-        <ul className="space-y-1 text-xs list-disc">
+        <ul className="space-y-2 text-xs list-disc">
           <li>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
