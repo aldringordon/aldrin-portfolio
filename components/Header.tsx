@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
-import { SocialIcon } from "react-social-icons";
+import { IconContext } from "react-icons";
+import { SiLinkedin, SiGithub, SiBitbucket } from "react-icons/si";
+import { MdOutlineEmail, MdHome } from "react-icons/md";
+import { HiOutlineNewspaper } from "react-icons/hi";
 
 type Props = {};
 
@@ -25,24 +28,61 @@ function Header({}: Props) {
         className="flex flex-row items-center"
       >
         {/* Social icons */}
-        <SocialIcon
-          url="https://linkedin.com/in/aldringordon"
-          fgColor="gray"
-          bgColor="transparent"
-          className="hover:scale-125"
-        />
-        <SocialIcon
-          url="https://github.com/aldringordon"
-          fgColor="gray"
-          bgColor="transparent"
-          className="hover:scale-125"
-        />
-        <SocialIcon
-          url="https://aldringordon.com"
-          fgColor="gray"
-          bgColor="transparent"
-          className="hover:scale-125"
-        />
+        <IconContext.Provider
+          value={{
+            color: "gray",
+            size: "1.8em",
+            className: "hover:-translate-y-1 px-1",
+          }}
+        >
+          <div>
+            <Link href="https://linkedin.com/in/aldringordon">
+              <SiLinkedin />
+            </Link>
+          </div>
+        </IconContext.Provider>
+
+        <IconContext.Provider
+          value={{
+            color: "gray",
+            size: "1.8em",
+            className: "hover:-translate-y-1 px-1",
+          }}
+        >
+          <div>
+            <Link href="https://bitbucket.org/aldringordon/">
+              <SiBitbucket />
+            </Link>
+          </div>
+        </IconContext.Provider>
+
+        <IconContext.Provider
+          value={{
+            color: "gray",
+            size: "1.8em",
+            className: "hover:-translate-y-1 px-1",
+          }}
+        >
+          <div>
+            <Link href="https://github.com/aldringordon">
+              <SiGithub />
+            </Link>
+          </div>
+        </IconContext.Provider>
+
+        <IconContext.Provider
+          value={{
+            color: "gray",
+            size: "2.2em",
+            className: "hover:-translate-y-1 px-1",
+          }}
+        >
+          <div>
+            <Link href="https://aldringordon.com/">
+              <HiOutlineNewspaper />
+            </Link>
+          </div>
+        </IconContext.Provider>
       </motion.div>
 
       <motion.div
@@ -61,15 +101,33 @@ function Header({}: Props) {
         }}
         className="flex flex-row items-center text-gray-300 cursor-pointer"
       >
-        <SocialIcon
-          className="cursor-pointer hover:scale-125"
-          network="email"
-          fgColor="gray"
-          bgColor="transparent"
-        />
-        <p className="hidden text-sm text-gray-400 uppercase md:inline-flex">
-          Send Me An Email
-        </p>
+        <IconContext.Provider
+          value={{
+            color: "gray",
+            size: "2em",
+            className: "hover:-translate-y-1 px-1",
+          }}
+        >
+          <div>
+            <Link href="#contact">
+              <MdOutlineEmail />
+            </Link>
+          </div>
+        </IconContext.Provider>
+
+        <IconContext.Provider
+          value={{
+            color: "gray",
+            size: "2em",
+            className: "hover:-translate-y-1 px-1",
+          }}
+        >
+          <div>
+            <Link href="#hero">
+              <MdHome />
+            </Link>
+          </div>
+        </IconContext.Provider>
       </motion.div>
     </header>
   );
