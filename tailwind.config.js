@@ -5,7 +5,11 @@ module.exports = {
         "./components/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
-        extend: {},
+        extend: {
+            screens: {
+                'betterhover': {'raw': '(hover: hover)'},
+            }
+        },
     },
     plugins: [
         require('tailwind-scrollbar'),
@@ -22,4 +26,5 @@ module.exports = {
         xl: { min: '1159px' }, // Desktop wide.
         xxl: { min: '1359px' } // Desktop widescreen.
       },
+      
 }

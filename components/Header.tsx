@@ -32,7 +32,7 @@ function Header({}: Props) {
           value={{
             color: "gray",
             size: "1.8em",
-            className: "hover:-translate-y-1 px-1",
+            className: "betterhover:-translate-y-1 px-1",
           }}
         >
           <div>
@@ -46,7 +46,7 @@ function Header({}: Props) {
           value={{
             color: "gray",
             size: "1.8em",
-            className: "hover:-translate-y-1 px-1",
+            className: "betterhover:-translate-y-1 px-1",
           }}
         >
           <div>
@@ -60,7 +60,7 @@ function Header({}: Props) {
           value={{
             color: "gray",
             size: "1.8em",
-            className: "hover:-translate-y-1 px-1",
+            className: "betterhover:-translate-y-1 px-1",
           }}
         >
           <div>
@@ -74,7 +74,7 @@ function Header({}: Props) {
           value={{
             color: "gray",
             size: "2.2em",
-            className: "hover:-translate-y-1 px-1",
+            className: "betterhover:-translate-y-1 px-1",
           }}
         >
           <div>
@@ -105,7 +105,7 @@ function Header({}: Props) {
           value={{
             color: "gray",
             size: "2em",
-            className: "hover:-translate-y-1 px-1",
+            className: "betterhover:-translate-y-1 px-1",
           }}
         >
           <div>
@@ -119,7 +119,7 @@ function Header({}: Props) {
           value={{
             color: "gray",
             size: "2em",
-            className: "hover:-translate-y-1 px-1",
+            className: "betterhover:-translate-y-1 px-1",
           }}
         >
           <div>
