@@ -16,7 +16,7 @@ function WorkExperience({}: Props) {
       transition={{ duration: 1.5 }}
       className="relative flex flex-col items-center justify-center h-screen mx-auto overflow-hidden"
     >
-      <h3 className="absolute top-[60px] uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="translate-x-[10px] absolute top-[60px] uppercase tracking-[20px] text-gray-500 text-2xl">
         Experience
       </h3>
 
