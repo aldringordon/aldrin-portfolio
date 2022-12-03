@@ -10,7 +10,7 @@ function Skill({ directionLeft }: Props) {
   return (
     <motion.div
       initial={{
-        x: directionLeft ? -200 : 200,
+        x: directionLeft ? -100 : 100,
         opacity: 0,
       }}
       transition={{ duration: 1 }}
@@ -19,12 +19,20 @@ function Skill({ directionLeft }: Props) {
     >
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
-        className="object-cover w-24 h-24 transition duration-300 ease-in-out border border-gray-500 rounded-full md:w-28 md:h-28 xl:w-32 xl:h-32 filter group-hover:grayscale"
+        className="object-cover
+        w-[70px] h-[70px]
+        sm:w-[90px] sm:h-[90px]
+        transition duration-300 ease-in-out border border-gray-500 rounded-full filter group-hover:blur-sm"
         alt=""
       />
-      <div className="absolute z-0 w-24 h-24 transition duration-300 ease-in-out rounded-full opacity-0 group-hover:opacity-80 group-hover:bg-white md:w-28 md:h-28 xl:w-32 xl:h-32">
+      <div
+        className="
+      w-[70px] h-[70px]
+      sm:w-[90px] sm:h-[90px]
+      absolute z-0 transition duration-300 ease-in-out rounded-full opacity-0 group-hover:opacity-80 group-hover:bg-white-100/20 "
+      >
         <div className="flex items-center justify-center h-full">
-          <p className="text-3xl font-bold text-black opacity-100">100%</p>
+          <p className="font-normal opacity-100 text-zinc-50">typescript</p>
         </div>
       </div>
     </motion.div>
