@@ -48,44 +48,41 @@ function ContactMe({}: Props) {
           </div>
         </div>
 
-        <form
-          onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col mx-auto space-y-2 w-fit"
-        >
-          <div className="flex space-x-2">
+        <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col w-fit">
+          <div className="grid grid-cols-4 grid-rows-6 gap-2">
             <input
               {...register("name")}
               placeholder="Name"
-              className="contactInput"
+              className="col-span-2 row-span-1 contactInput"
               type="text"
             />
             <input
               {...register("email")}
               placeholder="Email"
-              className="contactInput"
+              className="col-span-2 row-span-1 contactInput"
               type="email"
             />
+
+            <input
+              {...register("subject")}
+              placeholder="Subject"
+              className="col-span-4 row-span-1 contactInput"
+              type="text"
+            />
+
+            <textarea
+              {...register("message")}
+              placeholder="Message"
+              className="col-span-4 row-span-2 contactInput"
+            />
+
+            <button
+              type="submit"
+              className="bg-[#f8ffae] col-span-4 row-span-1 rounded-md text-black font-bold text-lg"
+            >
+              Submit
+            </button>
           </div>
-
-          <input
-            {...register("subject")}
-            placeholder="Subject"
-            className="contactInput"
-            type="text"
-          />
-
-          <textarea
-            {...register("message")}
-            placeholder="Message"
-            className="contactInput"
-          />
-
-          <button
-            type="submit"
-            className="bg-[#f8ffae] py-5 px-10 rounded-md text-black font-bold text-lg"
-          >
-            Submit
-          </button>
         </form>
       </div>
     </div>
