@@ -22,70 +22,63 @@ function ContactMe({}: Props) {
 
   return (
     <div className="relative flex flex-col items-center h-screen px-10 mx-auto text-center md:text-left md:flex-row max-w-7xl justify-evenly">
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="translate-x-[10px] absolute top-[60px] uppercase tracking-[20px] text-gray-500 text-2xl">
         Contact
       </h3>
 
-      <div className="flex flex-col space-y-10">
-        <h4 className="text-4xl font-semibold text-center">
-          Contact <span className="underline decoration-[#f8ffae]/60">me</span>{" "}
+      <div className="flex flex-col space-y-5">
+        <h4 className="text-2xl font-semibold text-center">
+          flick me a{" "}
+          <span className="underline decoration-[#f8ffae]/60">msg</span>{" "}
         </h4>
 
-        <div className="space-y-10">
-          <div className="flex items-center justify-center space-x-5">
-            <PhoneIcon className="text-[#f8ffae] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">+12 345 678 910</p>
-          </div>
-
+        <div className="space-y-6">
           <div className="flex items-center justify-center space-x-5">
             <EnvelopeIcon className="text-[#f8ffae] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">example@gmail.com</p>
+            <p className="text-xl">example@gmail.com</p>
           </div>
 
           <div className="flex items-center justify-center space-x-5">
             <MapPinIcon className="text-[#f8ffae] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">Perth, Western Australia</p>
+            <p className="text-xl">Perth, Western Australia</p>
           </div>
         </div>
 
-        <form
-          onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col mx-auto space-y-2 w-fit"
-        >
-          <div className="flex space-x-2">
+        <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col w-fit">
+          <div className="grid grid-cols-4 grid-rows-6 gap-2">
             <input
               {...register("name")}
               placeholder="Name"
-              className="contactInput"
+              className="col-span-2 row-span-1 contactInput"
               type="text"
             />
             <input
               {...register("email")}
               placeholder="Email"
-              className="contactInput"
+              className="col-span-2 row-span-1 contactInput"
               type="email"
             />
+
+            <input
+              {...register("subject")}
+              placeholder="Subject"
+              className="col-span-4 row-span-1 contactInput"
+              type="text"
+            />
+
+            <textarea
+              {...register("message")}
+              placeholder="Message"
+              className="col-span-4 row-span-2 contactInput"
+            />
+
+            <button
+              type="submit"
+              className="bg-[#f8ffae] col-span-4 row-span-1 rounded-md text-black font-bold text-lg"
+            >
+              Submit
+            </button>
           </div>
-
-          <input
-            {...register("subject")}
-            placeholder="Subject"
-            className="contactInput"
-            type="text"
-          />
-
-          <textarea
-            {...register("message")}
-            placeholder="Message"
-            className="contactInput"
-          />
-
-          <button
-            type="submit"
-            className="bg-[#f8ffae] py-5 px-10 rounded-md text-black font-bold text-lg"
-          >
-            Submit
-          </button>
         </form>
       </div>
     </div>
