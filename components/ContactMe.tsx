@@ -22,29 +22,25 @@ function ContactMe({}: Props) {
 
   return (
     <div className="relative flex flex-col items-center h-screen px-10 mx-auto text-center md:text-left md:flex-row max-w-7xl justify-evenly">
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="translate-x-[10px] absolute top-[60px] uppercase tracking-[20px] text-gray-500 text-2xl">
         Contact
       </h3>
 
-      <div className="flex flex-col space-y-10">
-        <h4 className="text-4xl font-semibold text-center">
-          Contact <span className="underline decoration-[#f8ffae]/60">me</span>{" "}
+      <div className="flex flex-col space-y-5">
+        <h4 className="text-2xl font-semibold text-center">
+          flick me a{" "}
+          <span className="underline decoration-[#f8ffae]/60">msg</span>{" "}
         </h4>
 
-        <div className="space-y-10">
-          <div className="flex items-center justify-center space-x-5">
-            <PhoneIcon className="text-[#f8ffae] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">+12 345 678 910</p>
-          </div>
-
+        <div className="space-y-6">
           <div className="flex items-center justify-center space-x-5">
             <EnvelopeIcon className="text-[#f8ffae] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">example@gmail.com</p>
+            <p className="text-xl">example@gmail.com</p>
           </div>
 
           <div className="flex items-center justify-center space-x-5">
             <MapPinIcon className="text-[#f8ffae] h-7 w-7 animate-pulse" />
-            <p className="text-2xl">Perth, Western Australia</p>
+            <p className="text-xl">Perth, Western Australia</p>
           </div>
         </div>
 
